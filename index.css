@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* position: fixed; */
+  background-color: white;
+  height: 50px;
+  border-bottom: 1px solid #e8e8ea;
+}
+
+footer {
+  background-color: #14142f;
+  color: white;
+  height: 500px;
+}
+
+.content{
+  color: white;
+  height:auto;
+  background-color: #7f8fa6;
+}
+
+.main-content{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 3%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#img1{
+  width: 20%;
+  height: auto;
+}
+
+hr{
+  width: 50%;
+  background-color: white;
+}
