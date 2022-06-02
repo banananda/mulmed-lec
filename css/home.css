@@ -1,8 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition-duration: 0.5s;
 }
@@ -14,7 +14,6 @@ body {
 
 .content1,
 .content2 {
-
     height: 100vh;
     padding: 100px;
 }
@@ -114,7 +113,7 @@ body {
 
 .t {
     position: absolute;
-    width: 100vw;
+    width: 100%;
 }
 
 .t-box {
