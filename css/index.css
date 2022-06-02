@@ -1,6 +1,238 @@
-body>div {
-  height: 500px;
-  background-color: red;
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition-duration: 0.5s;
 }
 
-/* END OF HEADER FOOTER SECTION */
+.content1,
+.content-carousel {
+  position: relative;
+}
+
+.content1,
+.content2 {
+
+  height: 100vh;
+  padding: 100px;
+}
+
+
+.container,
+.container2 {
+  background-image: url(img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container2 {
+  background-image: url(img/img2.jpg);
+}
+
+
+.carousel-box {
+  width: 1000px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-box h1 {
+  color: white;
+  font-size: 25px;
+}
+
+.carousel-image,
+.carousel-box h1,
+.carousel-box p {
+  position: absolute;
+}
+
+.carousel-image {
+  background-image: url("img/wp.jpg");
+  width: 1000px;
+  height: 400px;
+  background-size: cover;
+  border-radius: 25px;
+  border: 5px solid rgba(154, 151, 151, 0.3);
+  background-position: 225px;
+}
+
+.content-title {
+  font-style: bold;
+}
+
+.carousel-text {
+  word-wrap: break-word;
+  height: 100%;
+  width: 400px;
+  position: relative;
+  padding: 50px;
+}
+
+.carousel-text h1 {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.carousel-text p {
+  margin-top: 150px;
+  font-style: bold;
+  color: #55575a;
+}
+
+
+/* Button */
+
+.course-btn p {
+  position: absolute;
+  cursor: pointer;
+  background: #14142f;
+  border-radius: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  opacity: 1;
+  transition: .3s all;
+  height: 40px;
+  width: 250px;
+  margin-top: 250px;
+
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.t {
+  position: absolute;
+  width: 100vw;
+}
+
+.t-box {
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 25px;
+
+  height: 100px;
+  width: 1000px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+
+/* Content 2 */
+
+.flow {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+}
+
+.flow p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-button {
+  cursor: pointer;
+  background: #ffffff;
+  height: 40px;
+  transition: .3s all;
+  padding: 0px 20px;
+  border-radius: 40px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.container2 {
+  height: 140vh;
+}
+
+.content2 {
+  height: 5vh;
+}
+
+
+.border {
+  border: 5px solid #14142f;
+  ;
+  border-top: 30px solid #14142f;
+  border-radius: 25px;
+  background-color: #14142f;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  background-color: #ffffff;
+  height: 600px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  padding: 20px;
+}
+
+.flow .active {
+  background: #14142f;
+  color: white;
+}
+
+.border .card {
+  display: none;
+}
+
+.border .active {
+  display: block;
+}
+
+.slide {
+  position: absolute
+}
+
+.border li {
+  padding: 5px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.bottom {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.btn {
+  cursor: pointer;
+  background: #14142f;
+  ;
+  color: white;
+  height: 40px;
+  transition: .3s all;
+  padding: 0px 20px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(40%, 75%);
+}

@@ -1,0 +1,98 @@
+#section-1 {
+    width: 80%;
+    background-color: #eee;
+    padding: 80px 10% 80px 10%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.breadcrumbs * {
+    font-size: 1rem;
+    color: #444;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #222;
+    align-self: center;
+}
+
+#section-2 {
+    width: 80%;
+    background-color: #eee;
+    /* background-color: blue; */
+    padding: 0 10% 80px 10%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+}
+
+.content {
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* .subsection {
+    margin-bottom: 40px;
+} */
+
+.subsection-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 12px;
+    transition-duration: 0.1s;
+}
+
+.subsection-title:hover {
+    color: red;
+    cursor: default;
+}
+
+.subsection-desc {
+    font-size: 1rem;
+    color: #444;
+}
+
+.navigation {
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    /* align-items: flex-end; */
+}
+
+.navigation>div {
+    /* background-color: purple; */
+    position: fixed;
+}
+
+
+
+#nav-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.navigation li {
+    list-style: none;
+    padding: 12px 0 12px 20px;
+    border-left: 5px solid rgb(112, 111, 111);
+}
+
+.navigation li:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    border-left: 5px solid rgb(235, 49, 49);
+    cursor: pointer;
+}
