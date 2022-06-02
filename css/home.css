@@ -257,9 +257,11 @@ body {
     font-size: 30pt;
     font-weight: bold;
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .smallText {
+    margin-top: 0;
     font-size: 15pt;
     font-weight: bold;
 }

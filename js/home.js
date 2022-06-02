@@ -27,3 +27,7 @@ function change() {
       counter = 0;
   }
 }
+
+document.getElementsByClassName("startBtn")[0].addEventListener("click", ()=>{
+  window.open("./../courses.html", "_self")
+});

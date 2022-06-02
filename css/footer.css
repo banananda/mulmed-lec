@@ -1,6 +1,6 @@
 footer {
   background-color: #081424;
-  height: 200px;
+  height: 255px;
 
 }
 
@@ -19,6 +19,7 @@ footer>div {
 footer p {
   text-align: center;
   color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #sosmed {
