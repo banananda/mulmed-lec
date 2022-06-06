@@ -29,51 +29,107 @@
         </div>
     </header>
     <section id="section-1">
-        <div class="breadcrumbs"><a href="./courses.html">Courses</a> > <a href="">Merge Sort</a></div>
+        <div class="breadcrumbs"><a href="./courses.html">Courses</a> / Merge Sort</div>
         <h2>Merge Sort</h2>
     </section>
     <section id="section-2">
         <div class="content">
+            <div id="video" class="subsection">
+                <div class="subsection-title">Video</div>
+                <div class="subsection-desc">
+                    <div id="video-container">
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe" id="youtube-video"
+                                src="https://www.youtube.com/embed/g2VzA761fBY" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="introduction" class="subsection">
                 <div class="subsection-title">Introduction</div>
-                <div class="subsection-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dolores
-                    unde numquam ab, molestiae nemo, recusandae architecto cupiditate qui nobis a sequi necessitatibus
-                    tempora veritatis, omnis vel deserunt inventore pariatur. Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Et maxime consectetur, commodi veritatis, est quam unde vel odio, ea sunt quo
-                    minus placeat recusandae! Excepturi laborum vero ex. Molestias, perspiciatis. Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit. Perspiciatis assumenda distinctio atque! Libero quia fuga, beatae
-                    reiciendis et, fugiat quo rerum labore aut facere provident eos doloribus, nesciunt unde autem.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo eum facilis modi numquam fugit, quasi
-                    optio sed rerum dignissimos cum odit corporis itaque quidem culpa totam dicta obcaecati minus omnis!
+                <div class="subsection-desc">Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides
+                    the input array into two halves, calls itself
+                    for the two halves, and then it merges the two sorted halves. The merge() function is used for
+                    merging two halves. The
+                    merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and
+                    merges the two sorted
+                    sub-arrays into one.
+                    <br>
+                    <br>
+                    <strong>Pseudocode:</strong>
+                    <div class="code">
+                        <ul>
+                            <li>Declare left variable to 0 and right variable to n-1</li>
+                            <li>Find mid by medium formula. mid = (left+right)/2</li>
+                            <li>Call merge sort on (left,mid)</li>
+                            <li>Call merge sort on (mid+1,rear)</li>
+                            <li>Continue till left is less than right</li>
+                            <li>Then call merge function to perform merge sort.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="implementation" class="subsection">
                 <div class="subsection-title">Implementation</div>
-                <div class="subsection-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dolores
-                    unde numquam ab, molestiae nemo, recusandae architecto cupiditate qui nobis a sequi necessitatibus
-                    tempora veritatis, omnis vel deserunt inventore pariatur.</div>
+                <div class="subsection-desc">Below is an implementation of merge sort in C++.
+                    <div class="code">
+                    </div>
+                </div>
             </div>
             <div id="complexity" class="subsection">
                 <div class="subsection-title">Complexity</div>
-                <div class="subsection-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dolores
-                    unde numquam ab, molestiae nemo, recusandae architecto cupiditate qui nobis a sequi necessitatibus
-                    tempora veritatis, omnis vel deserunt inventore pariatur.</div>
+                <div class="subsection-desc"><strong>Time Complexity :</strong> O(n logn), Sorting arrays on different
+                    machines. Merge
+                    Sort is a recursive algorithm and time
+                    complexity can be expressed as following recurrence relation.
+                    <br>
+                    T(n) = 2T(n/2) + θ(n)
+                    <br>
+                    <br>
+                    The above recurrence can be solved either using the Recurrence Tree method or the Master method. It
+                    falls in case II of
+                    Master Method and the solution of the recurrence is θ(nLogn). Time complexity of Merge Sort is
+                    θ(nLogn) in all 3 cases
+                    (worst, average and best) as merge sort always divides the array into two halves and takes linear
+                    time to merge two
+                    halves.
+                    <br>
+                    <br>
+                    <strong>Auxiliary Space :</strong> O(n)
+                    <br>
+                    <br>
+
+                    <strong>Space Complexity :</strong>
+                    <ul style="margin-left: 20px;">
+                        <li>In merge sort all elements are copied into an auxiliary array</li>
+                        <li>so N auxiliary space is required for merge sort.</li>
+                    </ul>
+                </div>
             </div>
-            <div id="advantages" class="subsection">
-                <div class="subsection-title">Advantages</div>
-                <div class="subsection-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dolores
-                    unde numquam ab, molestiae nemo, recusandae architecto cupiditate qui nobis a sequi necessitatibus
-                    tempora veritatis, omnis vel deserunt inventore pariatur.</div>
+            <div id="drawbacks" class="subsection">
+                <div class="subsection-title">Drawbacks</div>
+                <div class="subsection-desc">
+                    <ul style="margin-left: 20px;">
+                        <li>Slower comparative to the other sort algorithms for smaller tasks.</li>
+                        <li>Merge sort algorithm requires an additional memory space of 0(n) for the temporary array.
+                        </li>
+                        <li>It goes through the whole process even if the array is sorted.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="navigation">
             <div id="float-nav">
                 <div id="nav-title">In this article</div>
                 <ul>
+                    <li id="nav-video">Video</li>
                     <li id="nav-intro">Introduction</li>
                     <li id="nav-implementation">Implementation</li>
                     <li id="nav-complexity">Complexity</li>
-                    <li id="nav-advantages">Advantages</li>
+                    <li id="nav-drawbacks">Drawbacks</li>
                 </ul>
             </div>
         </div>

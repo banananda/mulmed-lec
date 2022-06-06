@@ -12,12 +12,12 @@ window.onload = init;
       window.open("./../mergeSort.html", "_self");
     })
 
-    document.getElementById("course-2").addEventListener("click", () => {
-      window.open("./../mergeSort.html", "_self");
+    document.getElementById("card-bubble-sort").addEventListener("click", () => {
+      window.open("https://en.wikipedia.org/wiki/Bubble_sort");
     })
 
-    document.getElementById("course-3").addEventListener("click", () => {
-      window.open("./../mergeSort.html", "_self");
+    document.getElementById("card-bogosort").addEventListener("click", () => {
+      window.open("https://en.wikipedia.org/wiki/Bogosort");
     })
   }
 
